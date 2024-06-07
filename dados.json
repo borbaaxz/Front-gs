@@ -1,0 +1,12 @@
+{
+    "auth":[
+        {
+            "email":"user@example.com",
+            "senha": "123"
+        },
+        {
+            "email": "gabrielborbaaxz@gmail.com",
+            "senha": "123"
+        }
+    ]
+}

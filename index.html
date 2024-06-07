@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <style>
+    body {
+      background: linear-gradient(to bottom, #003366, #66ccff);
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+    .login-form {
+      width: 100%;
+      max-width: 400px;
+      padding: 15px;
+      margin: auto;
+      background: rgba(0, 51, 102, 0.8);
+      border-radius: 10px;
+    }
+    .btn-primary {
+      background-color: #003366;
+      border-color: #003366;
+    }
+    .btn-primary:hover {
+      background-color: #002244;
+      border-color: #002244;
+    }
+
+    @media (max-width: 576px) {
+      .container {
+        padding: 0 10px;
+      }
+      .login-form {
+        border-radius: 0;
+      }
+      .navbar {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Login</h2>
+    <form id="loginForm" class="login-form">
+      <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" name="password" required>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Login</button>
+    </form>
+  </div>
+
+  <header class="bg-light p-3">
+    <div class="container">
+      <h1 class="text-center">Oceans 20 (O20)</h1>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="dashboard.html">Página Inicial</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="azul.html">Azul sustentável </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Concientizacao.html">conscientização e introdução</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Projeto.html">Projeto </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="visita.html">Cadastro</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
